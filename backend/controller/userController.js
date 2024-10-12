@@ -134,6 +134,8 @@ export const logoutAdmin=catchAsyncErrors(async (req,res,next)=>{
     .cookie("admintoken","",{
         httpOnly:true,
         expires:new Date(Date.now()),
+        secure:true,
+        sameSite:"None"
         
     })
     .json({
@@ -148,6 +150,8 @@ export const logoutPatient=catchAsyncErrors(async (req,res,next)=>{
     .cookie("patientToken","",{
         httpOnly:true,
         expires:new Date(Date.now()),
+        secure:true,
+        sameSite:"None"
        
     })
     .json({
@@ -231,6 +235,8 @@ export const logoutDoctor=catchAsyncErrors(async (req,res,next)=>{
     .cookie("doctortoken","",{
         httpOnly:true,
         expires:new Date(Date.now()),
+         secure:true,
+        sameSite:"None"
     })
     .json({
         success:true,
