@@ -11,7 +11,7 @@ const Doctors = () => {
     useEffect(()=>{
         const fetchDoctors=async()=>{
             try{
-                const {data}=await axios.get("http://localhost:3000/api/v1/user/doctors",{withCredentials:true});
+                const {data}=await axios.get("https://with-refill-hms-backend.onrender.com/api/v1/user/doctors",{withCredentials:true});
                 setDoctors(data.doctors);
             }catch(error){
                 toast.error(error.response.data.message);d

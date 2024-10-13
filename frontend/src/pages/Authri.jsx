@@ -27,7 +27,7 @@ const Authri = () => {
       e.preventDefault();
       try {
         const response = await axios.post(
-          "http://localhost:3000/api/v1/user/patient/register",
+          "https://with-refill-hms-backend.onrender.com/api/v1/user/patient/register",
           { firstName, lastName, email, phone, confirmPassword, dob, gender, password, role: "Patient" },
           {
             withCredentials: true,
@@ -46,7 +46,7 @@ const Authri = () => {
       e.preventDefault();
       try {
         const response = await axios.post(
-          "http://localhost:3000/api/v1/user/login",
+          "https://with-refill-hms-backend.onrender.com/api/v1/user/login",
           { email, password, role: "Patient" },
           {
             withCredentials: true,

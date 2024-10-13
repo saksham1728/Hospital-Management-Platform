@@ -17,7 +17,7 @@ const MyAppointments = () => {
     useEffect(() => {
         const fetchAppointments = async () => {
             try {
-                const { data } = await axios.get("http://localhost:3000/api/v1/appointment/user/appointments", { withCredentials: true });
+                const { data } = await axios.get("https://with-refill-hms-backend.onrender.com/api/v1/appointment/user/appointments", { withCredentials: true });
                 setAppointments(data.appointments);
             } catch (error) {
                 setAppointments([]);
@@ -60,7 +60,7 @@ const MyAppointments = () => {
         if (!selectedAppointment) return;
 
         try {
-            await axios.put(`http://localhost:3000/api/v1/appointment/${selectedAppointment._id}/refill-request`, {
+            await axios.put(`https://with-refill-hms-backend.onrender.com/api/v1/appointment/${selectedAppointment._id}/refill-request`, {
                 refillRequest: requestRefill
             }, {
                 withCredentials: true
@@ -77,7 +77,7 @@ const MyAppointments = () => {
         const isConfirmed = window.confirm("Do you want to delete this appointment?");
         if (isConfirmed) {
             try {
-                await axios.delete(`http://localhost:3000/api/v1/appointment/delete/${id}`, { withCredentials: true });
+                await axios.delete(`https://with-refill-hms-backend.onrender.com/api/v1/appointment/delete/${id}`, { withCredentials: true });
                 setAppointments(appointments.filter(appointment => appointment._id !== id));
                 toast.success("Appointment deleted successfully");
             } catch (error) {

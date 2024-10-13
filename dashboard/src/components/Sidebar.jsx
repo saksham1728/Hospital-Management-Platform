@@ -47,7 +47,7 @@ const Sidebar = () => {
         const confirmLogout = window.confirm("Do you really want to log out?");
         if (confirmLogout) {
             await axios
-                .get("http://localhost:3000/api/v1/user/admin/logout", {
+                .get("https://with-refill-hms-backend.onrender.com/api/v1/user/admin/logout", {
                     withCredentials: true,
                 })
                 .then((res) => {

@@ -25,7 +25,7 @@ const DoctorAppointments = () => {
     useEffect(() => {
         const fetchAppointments = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/api/v1/user/doctor/appointments", {
+                const response = await axios.get("https://with-refill-hms-backend.onrender.com/api/v1/user/doctor/appointments", {
                     withCredentials: true
                 });
                 setAppointments(response.data.appointments);
@@ -44,7 +44,7 @@ const DoctorAppointments = () => {
 
         try {
             const { data } = await axios.get(
-                `http://localhost:3000/api/v1/appointment/${appointment._id}/refill-request`,
+                `https://with-refill-hms-backend.onrender.com/api/v1/appointment/${appointment._id}/refill-request`,
                 { withCredentials: true }
             );
             setRefillRequest(data.refillRequest); 
@@ -56,7 +56,7 @@ const DoctorAppointments = () => {
 
     const handleOpenRefillRequestModal = async (appointment) => {
         try {
-            const response = await axios.get(`http://localhost:3000/api/v1/appointment/${appointment._id}/refill-request`, {
+            const response = await axios.get(`https://with-refill-hms-backend.onrender.com/api/v1/appointment/${appointment._id}/refill-request`, {
                 withCredentials: true
             });
             const refillRequest = response.data.refillRequest;
@@ -96,7 +96,7 @@ const DoctorAppointments = () => {
     const handleSavePrescription = async () => {
         try {
             await axios.put(
-                `http://localhost:3000/api/v1/appointment/update-prescription/${selectedAppointment._id}`,
+                `https://with-refill-hms-backend.onrender.com/api/v1/appointment/update-prescription/${selectedAppointment._id}`,
                 { doctorNotes, prescription },
                 { withCredentials: true }
             );
@@ -111,7 +111,7 @@ const DoctorAppointments = () => {
         const confirmLogout = window.confirm("Do you really want to log out?");
         if (confirmLogout) {
             try {
-                const res = await axios.get("http://localhost:3000/api/v1/user/doctor/logout", {
+                const res = await axios.get("https://with-refill-hms-backend.onrender.com/api/v1/user/doctor/logout", {
                     withCredentials: true,
                 });
                 toast.success(res.data.message);

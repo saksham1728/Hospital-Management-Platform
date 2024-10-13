@@ -16,7 +16,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchAppointments = async () => {
             try {
-                const { data } = await axios.get("http://localhost:3000/api/v1/appointment/getall", { withCredentials: true });
+                const { data } = await axios.get("https://with-refill-hms-backend.onrender.com/api/v1/appointment/getall", { withCredentials: true });
                 setAppointments(data.appointments);
             } catch (error) {
                 setAppointments([]);
@@ -26,7 +26,7 @@ const Dashboard = () => {
 
         const fetchDoctors = async () => {
             try {
-                const { data } = await axios.get("http://localhost:3000/api/v1/user/doctors", { withCredentials: true });
+                const { data } = await axios.get("https://with-refill-hms-backend.onrender.com/api/v1/user/doctors", { withCredentials: true });
                 setDoctors(data.doctors);
             } catch (error) {
                 setDoctors([]);
@@ -42,7 +42,7 @@ const Dashboard = () => {
     const handleUpdateStatus= async(appointmentId,status)=>{
         try{
             const {data}=await axios.put(
-                `http://localhost:3000/api/v1/appointment/update/${appointmentId}`,
+                `https://with-refill-hms-backend.onrender.com/api/v1/appointment/update/${appointmentId}`,
                 {status},
                 {withCredentials:true}
             );
