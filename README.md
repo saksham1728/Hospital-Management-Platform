@@ -44,8 +44,7 @@ Our platform is user-friendly, secure, and packed with modern features, making i
 - **Backend**: Node.js + Express.js  
 - **Database**: MongoDB  
 - **Authentication**: JWT (JSON Web Tokens)  
-- **Real-Time Features**: WebSockets, Video Calls (WebRTC Integration)  
-- **Hosting**: Deployed on [Platform Name, e.g., Heroku/AWS/Netlify]  
+- **Hosting**: Deployed on Render 
 
 ---
 
