@@ -50,6 +50,22 @@ Our platform is user-friendly, secure, and packed with modern features, making i
 ---
 
 ## 🚀 **How to Get Started**  
+**Method 1**
+**Directly access my websites from the below links**
+**User Panel** :- https://with-refill-hms-frontend.onrender.com
+
+**Admin Panel**:- https://with-refill-hms-dashboard.onrender.com
+You can use the following credentials to access admin panel 
+**email-** 
+**password-** 
+
+**Doctor Panel** :- https://with-refill-hms-doctor.onrender.com
+You can use the following credentials to access doctor panel
+**email-** 
+**password-**
+
+
+
 
 1. **Clone the Repository**  
    ```bash
