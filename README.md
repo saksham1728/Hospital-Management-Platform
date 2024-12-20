@@ -59,19 +59,19 @@ Our platform is user-friendly, secure, and packed with modern features, making i
 You can use the following credentials to access admin panel 
 
 
-**email-**
+**email-** saksham@gmail.com
 
 
-**password-** 
+**password-** saksham28
 
 **Doctor Panel** :- https://with-refill-hms-doctor.onrender.com
 You can use the following credentials to access doctor panel
 
 
-**email-**
+**email-** ramsingh@gmail.com
 
 
-**password-**
+**password-** saksham28
 
 ---
 
@@ -105,12 +105,12 @@ You can use the following credentials to access doctor panel
 ## 🛠️ **Credentials for Testing**
 
 ### 🧑‍💻 **Admin Panel**  
-- **Email**: `admin@example.com`  
-- **Password**: `admin123`  
+- **Email**: `saksham@gmail.com`  
+- **Password**: `saksham28`  
 
 ### 👨‍⚕️ **Doctor Panel**  
-- **Email**: `doctor@example.com`  
-- **Password**: `doctor123`  
+- **Email**: `ramsingh@gmail.com`  
+- **Password**: `saksham28`  
 
 ---
 
@@ -119,10 +119,6 @@ Seamlessly conduct **video consultations** with integrated video calling feature
 
 ---
 
-## 💡 **Screenshots**  
-- Add platform screenshots here to visually showcase the app's features.  
-
----
 
 ## 🤝 **Contributing**  
 We welcome contributions to enhance the platform! Feel free to:  
