@@ -53,9 +53,9 @@ Our platform is user-friendly, secure, and packed with modern features, making i
 
 **Directly access my websites from the below links**
 
-**User Panel** :- https://with-refill-hms-frontend.onrender.com
+**-User Panel** :- https://with-refill-hms-frontend.onrender.com
 
-**Admin Panel**:- https://with-refill-hms-dashboard.onrender.com
+**-Admin Panel**:- https://with-refill-hms-dashboard.onrender.com
 
 You can use the following credentials to access admin panel 
 
@@ -67,7 +67,7 @@ You can use the following credentials to access admin panel
 
 
 
-**Doctor Panel** :- https://with-refill-hms-doctor.onrender.com
+**-Doctor Panel** :- https://with-refill-hms-doctor.onrender.com
 
 You can use the following credentials to access doctor panel
 
