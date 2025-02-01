@@ -139,8 +139,8 @@ Our platform contributes to society by raising **awareness about women’s safet
 
 ## 📞 **Support**  
 For any issues or questions, feel free to reach out:  
-- **Email**: `support@yourdomain.com`  
-- **Contact**: +1-234-567-890  
+- **Email**: `maheshwarisaksham012@gmail.com`  
+- **Contact**: +91-7296893074  
 
 ---
 
