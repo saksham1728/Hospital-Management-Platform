@@ -13,8 +13,9 @@ const app=express();
 config({path:"./config.env"});
 
 app.use(cors({
-  origin: '*',
+  origin: 'https://with-refill-hms-dashboard.onrender.com',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
 }));
  
 app.use(cookieParser());
