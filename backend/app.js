@@ -13,7 +13,7 @@ const app=express();
 config({path:"./config.env"});
 
 app.use(cors({
-  origin: 'https://with-refill-hms-dashboard.onrender.com',
+  origin: ['https://with-refill-hms-dashboard.onrender.com','https://with-refill-hms-doctor.onrender.com','https://with-refill-hms-frontend.onrender.com'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
